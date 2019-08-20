@@ -66,10 +66,15 @@ function ff(person) { // decide on a good parameter name
   return person.age;
 }
 var peoplesAges = people.map(ff);
-console.log(peoplesAges);
 
 // =============================== 7
 // use map to produce an array with just names
+function gg(person) {
+  return person.name;
+}
+var peoplesNames = people.map(gg);
+var peoplesNamesOneLiner = people.map((per) => per.name);
+console.log(peoplesNamesOneLiner);
 
 // =============================== 8
 // not happy about being so old!
