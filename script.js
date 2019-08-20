@@ -11,9 +11,9 @@ function b() {
 }
 
 // =============================== 2
-// evaluate `c`
-// evaluate `c()`
-// evaluate `c()()`
+// evaluate `c`      function
+// evaluate `c()`    function
+// evaluate `c()()`  undefined
 function c() {
   return function d() {
     console.log(7);
@@ -30,10 +30,11 @@ var e = function e() {
 };
 
 // =============================== 4
-// evaluate `g()`
+// evaluate `g()` // undefined
 var g = () => { };
 
 // evaluate `h()`
+// var h = () => ({});
 var h = () => {
   return {};
 }
@@ -48,7 +49,7 @@ var j = i(6);
 
 // =============================== 6
 // evaluate `k(1)`
-// evaluate `m(k)`
+// evaluate `m(k)` // 12
 var k = (a) => 5 + a;
 function m(func) {
   return func(7);
