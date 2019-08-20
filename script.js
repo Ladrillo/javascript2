@@ -111,7 +111,8 @@ const sumOfAges = people.reduce((acc, person) => {
 // use reduce to produce a string with all names concatenated
 const combName = people.reduce((acc, person) => {
   return acc + person.name + ' ';
- }, '');
+}, '');
+
 // =============================== 12
 // use forEach to console.log the name of each person
 var res = [];
