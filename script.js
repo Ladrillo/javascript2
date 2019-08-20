@@ -189,3 +189,20 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.log(i); // crash!
+
+// world with no closures
+function complicated(a, b) {
+
+  function processA() {
+    // already can see a
+  }
+
+  const processedA = processA();
+
+  function processB() {
+    // already see b
+  }
+
+  const processedB = processB();
+
+}
