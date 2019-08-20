@@ -184,11 +184,15 @@ if (true) {
 }
 console.log(gaga); // works fine
 
-for (let i = 0; i < 5; i++) {
+for (var i = 0; i < 5; i++) {
   // here
 }
 
 console.log(i); // crash!
+
+for (var i = 0; i < 5; i++) {
+  // here
+}
 
 // world with no closures
 function complicated(a, b) {
@@ -199,8 +203,8 @@ function complicated(a, b) {
 
   const processedA = processA();
 
-  function processB() {
-    // already see b
+  const processB = () => {
+    // already can see b
   }
 
   const processedB = processB();
