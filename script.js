@@ -164,3 +164,15 @@ function another(DATA) { // car with tinted windows
   console.log(ccc); 
 }
 console.log(m); // unless there's another m , this is crash
+
+
+const car = 'prius'
+
+function dad() {
+  var name = 'daddy'
+  return function () {  // is a closure because it's using a variable from outer scope
+    // inside of car
+    return name;
+  }
+}
+// dad()()
