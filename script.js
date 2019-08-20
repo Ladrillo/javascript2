@@ -109,6 +109,11 @@ console.log(over21);
 
 // =============================== 12
 // use forEach to console.log the name of each person
+var res = [];
+people.forEach(person => {
+  console.log(`${person.name} is my buddy`);
+  res.push(`${person.name} is my buddy`);
+});
 
 // C - CALLBACKS
 
