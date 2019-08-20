@@ -194,7 +194,6 @@ for (var i = 0; i < 5; i++) {
   // here
 }
 
-// world with no closures
 function complicated(a, b) {
 
   function processA() {
