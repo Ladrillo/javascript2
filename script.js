@@ -85,7 +85,9 @@ var people = [
 // =============================== 13
 // Big boss wants us to produce a function that takes an array
 // and determines if its length is an odd or even number.
+
 // The next day he comes in wanting a function that takes an array
 // and returns whether the length is under 3 elements or not.
+
 // The next day he's asking for a function that takes an array
 // and returns whether the length is over 10 elements or not.
