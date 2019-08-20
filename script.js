@@ -62,8 +62,8 @@ var people = [
   { name: 'samar', age: 21 },
 ];
 // MAKE AN ARRAY OF AGES
-function ff(GAGA) { // decide on a good parameter name
-  return GAGA.age;
+function ff(person) { // decide on a good parameter name
+  return person.age;
 }
 var peoplesAges = people.map(ff);
 console.log(peoplesAges);
