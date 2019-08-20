@@ -161,7 +161,7 @@ function another(DATA) { // car with tinted windows
   // gabe. What can I see?
   var o = [];
   var m = {};
-  console.log(ccc); 
+  console.log(ccc);
 }
 console.log(m); // unless there's another m , this is crash
 
@@ -178,3 +178,14 @@ function dad() {
   }
 }
 // dad()()
+
+if (true) {
+  var gaga = 8;
+}
+console.log(gaga); // works fine
+
+for (let i = 0; i < 5; i++) {
+  // here
+}
+
+console.log(i); // crash!
