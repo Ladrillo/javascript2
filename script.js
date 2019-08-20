@@ -80,7 +80,7 @@ console.log(peoplesNamesOneLiner);
 
 // =============================== 8
 // not happy about being so old!
-// use map to produce an array with ages (take a couple years off each age!)
+// use map to produce an array with persons (take a couple years off each age!)
 
 // =============================== 9
 // we don't want youngsters
