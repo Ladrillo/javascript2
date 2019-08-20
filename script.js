@@ -76,9 +76,17 @@ function gg(person) {
 var peoplesNames = people.map(gg);
 // the short way
 var peoplesNamesOneLiner = people.map((per) => per.name);
-console.log(peoplesNamesOneLiner);
+// console.log(peoplesNamesOneLiner);
 
 // =============================== 8
+var personsYounger = people.map(function (person) {
+  var result = {
+    name: person.name,
+    age: person.age - 2,
+  };
+  console.log(result);
+  return result;
+});
 // not happy about being so old!
 // use map to produce an array with persons (take a couple years off each age!)
 
