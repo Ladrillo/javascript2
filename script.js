@@ -84,13 +84,20 @@ var personsYounger = people.map(function (person) {
     name: person.name,
     age: person.age - 2,
   };
-  console.log(result);
   return result;
 });
 // not happy about being so old!
 // use map to produce an array with persons (take a couple years off each age!)
 
 // =============================== 9
+var arr = [1, 2, 3];
+var evens = arr.filter((num) => {
+  if (num % 2 === 0) {
+    return true;
+  }
+  return false;
+});
+console.log(evens);
 // we don't want youngsters
 // use filter to produce an array with people over 21 only
 
