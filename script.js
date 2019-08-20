@@ -55,7 +55,7 @@ function m(func) {
   return func(7);
 }
 
-// B - MAP, FILTER, REDUCE
+// B - MAP, FILTER, FOREACH, REDUCE
 var people = [
   { name: 'gabe', age: 42 },
   { name: 'luke', age: 26 },
@@ -103,6 +103,9 @@ var over21 = people.filter(person => person.age > 21); // 21 > 21 // false
 console.log(over21);
 // =============================== 10
 // use reduce to produce a number with the sum of the ages of all people
+const sumOfAges = people.reduce((acc, person) => {
+  return acc + person.age;
+}, 0);
 
 // =============================== 11
 // use reduce to produce a string with all names concatenated
@@ -111,7 +114,6 @@ console.log(over21);
 // use forEach to console.log the name of each person
 var res = [];
 people.forEach(person => {
-  console.log(`${person.name} is my buddy`);
   res.push(`${person.name} is my buddy`);
 });
 
