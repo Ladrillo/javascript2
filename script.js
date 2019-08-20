@@ -149,7 +149,18 @@ console.log(aaa);
 // const and let are said to have BLOCK scope
 // var has FUNCTION scope
 
-function someFunction() {
+function someFunction() { // CAR WITH TINTED WINDOWS
   var bbb = NaN
 }
 console.log(bbb);
+
+var ccc = 100;
+
+// ANOTHER is what's called a CLOSURE
+function another(DATA) { // car with tinted windows
+  // gabe. What can I see?
+  var o = [];
+  var m = {};
+  console.log(ccc); 
+}
+console.log(m); // unless there's another m , this is crash
