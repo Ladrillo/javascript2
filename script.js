@@ -170,9 +170,11 @@ const car = 'prius'
 
 function dad() {
   var name = 'daddy'
+  console.log(age);
   return function () {  // is a closure because it's using a variable from outer scope
     // inside of car
-    return name;
+    var age = 67;
+    return name + car
   }
 }
 // dad()()
