@@ -69,10 +69,12 @@ var peoplesAges = people.map(ff);
 
 // =============================== 7
 // use map to produce an array with just names
+// the long way
 function gg(person) {
   return person.name;
 }
 var peoplesNames = people.map(gg);
+// the short way
 var peoplesNamesOneLiner = people.map((per) => per.name);
 console.log(peoplesNamesOneLiner);
 
