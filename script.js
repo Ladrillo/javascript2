@@ -100,7 +100,7 @@ var evens = arr.filter((num) => {
 // we don't want youngsters
 // use filter to produce an array with people over 21 only
 var over21 = people.filter(person => person.age > 21); // 21 > 21 // false
-console.log(over21);
+
 // =============================== 10
 // use reduce to produce a number with the sum of the ages of all people
 const sumOfAges = people.reduce((acc, person) => {
@@ -131,3 +131,25 @@ people.forEach(person => {
 
 // The next day he's asking for a function that takes an array
 // and returns whether the length is over 10 elements or not.
+
+
+// D - CLOSURES
+{
+  var a = 7;
+}
+console.log(a);
+
+{
+  let a = 8;
+  var aaa = null;
+}
+console.log(a);
+console.log(aaa);
+
+// const and let are said to have BLOCK scope
+// var has FUNCTION scope
+
+function someFunction() {
+  var bbb = NaN
+}
+console.log(bbb);
