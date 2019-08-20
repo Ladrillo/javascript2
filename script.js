@@ -210,3 +210,13 @@ function complicated(a, b) {
   const processedB = processB();
 
 }
+
+function map(arr, cb) {
+  // map creates a new array with the same number of elements as arr
+  // each element being whatever cb returns when invoked with the element
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(cb(arr[i]))
+  }
+  return result;
+}
